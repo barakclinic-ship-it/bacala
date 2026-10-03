@@ -10,7 +10,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="bacala">
 <link rel="manifest" href="manifest.json">
-<link rel="icon" id="fav"><link rel="apple-touch-icon" id="fav2">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -901,7 +902,7 @@ async function tryResume(){
 }
 
 /* =================== START =================== */
-document.querySelectorAll('[data-logo]').forEach(i=>i.src=LOGO);$('fav').href=$('fav2').href=LOGO;
+document.querySelectorAll('[data-logo]').forEach(i=>i.src=LOGO);
 buildPuzzleImage(shuffle);
 tryResume();
 if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
