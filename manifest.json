@@ -1,7 +1,8 @@
 {
+  "id": "./?app=bacala2",
   "name": "bacala",
   "short_name": "bacala",
-  "start_url": "./index.html",
+  "start_url": "./index.html?app=bacala2",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
