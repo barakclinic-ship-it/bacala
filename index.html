@@ -6,6 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="theme-color" content="#ffffff">
 <title>bacala</title>
+<link rel="manifest" href="manifest.json">
 <link rel="icon" id="fav"><link rel="apple-touch-icon" id="fav2">
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
 <style>
@@ -900,6 +901,7 @@ async function tryResume(){
 document.querySelectorAll('[data-logo]').forEach(i=>i.src=LOGO);$('fav').href=$('fav2').href=LOGO;
 buildPuzzleImage(shuffle);
 tryResume();
+if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('sw.js').catch(()=>{});
 })();
 </script>
 </body>
